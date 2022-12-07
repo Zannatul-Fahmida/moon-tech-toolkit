@@ -5,7 +5,7 @@ import { useLocation } from "react-router-dom";
 import {
   addToCart,
   removeFromCart,
-} from "../redux/actionCreators/productActions";
+} from "../redux/actions/productActions";
 
 const ProductCard = ({ product }) => {
   const { pathname } = useLocation();
@@ -38,7 +38,6 @@ const ProductCard = ({ product }) => {
           })}
         </ul>
       </div>
-      X
       <div className="flex gap-2 mt-5">
         {!pathname.includes("cart") && (
           <button
